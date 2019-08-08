@@ -24,18 +24,18 @@ def show_connectors(connectors):
     print(f"Capital letter \'{cl['value']}\' with ascii code {ca['value']}\n")
 
 def main():
-    # An example of recalculation of all values by changing different parts
-    # of the system and propagating these values across the system
+    # An example of a recalculation of all values by changing different parts
+    # of the system and propagating these values across the network
 
-    # Set up a Network
-    # Create all connectors (with their Domains) accordingly to our Network
+    # Set up a Network by ...
+    # ... creating all connectors (with their Domains) accordingly to our Network
     small_ascii = cp.connector('Small Ascii', lambda x: x >= 97 and x <= 122)
     small_letter = cp.connector('Small Letter', lambda x: x >= 'a' and x <= 'z')
     capital_ascii = cp.connector('Capital Ascii', lambda x: x >= 65 and x <= 90)
     capital_letter = cp.connector('Capital Letter', lambda x: x >= 'A' and x <= 'Z')
     connectors = (small_ascii, small_letter, capital_ascii, capital_letter)
 
-    # Link connectors with Nodes (constraints)
+    # ... linking connectors with Nodes (constraints)
     code(small_letter, small_ascii)
     code(capital_letter, capital_ascii)
     aA(small_letter, capital_letter)
