@@ -5,17 +5,17 @@
 # This module provides two basic abstractions (connectors and constraints) 
 # which allow to build a network representing a certain constraint system
 #
-# Connectors represent a value that can be set either manually or by 
-# the linked constraint (node) during a propagation new values after some other
-# connector was changed. In other words, changing a value of any connector 
-# leads to sending the "update" message to a links node (constraint) and recalculation
-# of new values for its other linked connectors accordingly to its constraints.
+# Connectors represent a value that can be set/get either directly or by 
+# the linked constraint (node) during a propagation of a new value.
+# Changing a value of any connector leads to sending the "update" message to 
+# a linked node (constraint) and recalculating new values for its other linked
+# connectors accordingly to its constraints.
 #
-# Constraints play a role of a node that keeps constraints and when recives
+# Constraints play a role of a node that keeps constraints and when receives
 # the "update" message from any of its connectors, recalculates proper values
 # for other connectors and send to them the "set" message with a new value, so
-# they can update thier state and notify their other linked constraints that
-# their value changed.
+# they can update their state and notify other linked constraints that
+# the value changed.
 #
 # connector-- constraint (node) --connector-- constraint (node) --connector
 
