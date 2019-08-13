@@ -56,9 +56,6 @@ pp(o2())
 print('\no3 object attributes:')
 pp(o3())
 
-#c2('instances')(1)
-#c3('instances')(1)
-
 print(f"\nc1's class attribute 'total' requested by o3: {o3('total')}")
 print(f"The same attribute requested via c2's class method: {c2('instances')()}")
 
