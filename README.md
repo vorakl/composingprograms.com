@@ -3,4 +3,4 @@
 My experiments inspired by ["Composing Programs"](https://composingprograms.com) which is authored and maintained by John DeNero.
 
 * [char_converter](char_converter/), the example of applying the constraint programming paradigm for converting Characters to/from Ascii codes
-* [pure_oop](pure_oop/), a pure implementation of Object-Oriented Paradigm in one function (encapsulation, polymorphism, inheritance)
+* [pure_oop](pure_oop/), a pure implementation of Object-Oriented Paradigm (encapsulation, polymorphism, inheritance) in one function 
