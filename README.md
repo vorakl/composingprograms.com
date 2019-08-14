@@ -1,4 +1,4 @@
-# Practicing ideas from the "Composing Programs"
+# Practice inspired by composingprograms.com
 
 My experiments inspired by ["Composing Programs"](https://composingprograms.com) which is authored and maintained by John DeNero.
 
